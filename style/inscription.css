@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: kanit;
+    overflow: hidden;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2% 17%;
+      font-family: 'Rowdies', sans-serif;
+      position: relative;
+      z-index: 2;
+      height: 100%;
+  }
+  
+  a {
+      color: #000000;
+  }
+  
+  .laformation {
+      cursor: pointer;
+  }
+  
+  nav {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 27%;
+      top: 60%;
+  }
+  
+  header li {
+      color: #f1f1f1;
+  }
+  
+  .logoclass{
+      position: absolute;
+      margin-left: 2%;
+      margin-top: 2%;
+  }
+  
+  .logo {
+      cursor: pointer;
+      width: 19%;
+      margin-right: 100%;
+  }
+  
+  
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 50%;
+  }
+  
+  .nav-links li {
+      display: inline-block;
+      white-space: nowrap;
+  }
+  
+  .sousmenu {
+      display: none;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      background-color: #f1f1f1;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      z-index: 1;
+  }
+  
+  .nav-links li:hover .sousmenu {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+  }
+  
+  .sousmenu li {
+      display: block;
+  }
+  
+  .sousmenu li a {
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      padding: 7%;
+  }
+  
+  .sousmenu li a:hover {
+      color: #f1f1f1;
+  }
+  
+  .nav-links .sousmenu li {
+      display: inline-block;
+      padding: 0;
+  }
+  
+  .nav-links li a {
+      transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links li a:hover {
+      color: #2f2a85;
+  }
+  
+  .button-nav {
+      font-family: 'Rowdies', sans-serif;
+      padding: 5px 10px;
+      background-color: #f1f1f1;
+      color: #2f2a85;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      border: none;
+      white-space: nowrap;
+  }
+  
+  .button-nav:hover {
+      background-color: #2f2a85;
+      color: #f1f1f1;
+  }
+
+
+
+
+.section-general {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-top: 3%;
+}
+
+
+.welcome-section {
+    flex: 3;
+    flex-direction: column;
+    background-color: #191740;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+    
+}
+
+.welcome-content h2 {
+    font-family: Rowdies;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.welcome-content p {
+    font-family: Kanit;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form-section {
+    flex: 7;
+    padding: 20px;
+    background-color: #2F2A85;
+    display: flex;
+    flex-direction: column; /* Afficher les éléments en colonne */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    height: 100%; /* Utiliser 100% de la hauteur disponible */
+}
+.form-section h2 {
+    text-align: center;
+    font-family: Rowdies;
+    font-size: 48px;
+    margin: 0;
+}
+
+form {
+    max-width: 900px;
+    margin: 0 ;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.form-group {
+    flex-basis: calc(48% - 180px);
+    margin-right: auto; /* Utiliser "auto" pour centrer à droite */
+    margin-left: auto; /* Utiliser "auto" pour centrer à gauche */
+    margin-bottom: 2%;
+}
+
+#gauche {
+    margin-right: 250px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 250px;
+    padding: 8px;
+    background-color: #2F2A85;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#button {
+    background-color: #ffffff;
+    color: #2F2A85;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 158px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 6%;
+}
+
+#button:hover {
+    background-color: #4c45d4;
+    color: white;
+    transition: 0.3s;
+}
+
+.hamburger-menu {
+    width: 50px;
+    height: 50%;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0px ; /* Ajuste la distance de la gauche en fonction de ton design */
+    z-index: 2;
+}
+
+.hamburger-menu .bar{
+    color: #000000;
+    width: 20%px;
+    height: 30px;
+    background-color: #000000;
+    margin: 27px 0;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        height: 100px;
+        display: flex;
+        justify-content: center; /* Ajoute cette ligne pour centrer les éléments horizontalement */
+        align-items: center;
+        padding: 2% 17%;
+        font-family: 'Rowdies', sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+    
+
+
+.logoclass {
+    /* Retire la position absolue et ajuste le margin */
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+a.logoclass {
+    /* Retire la position absolue et ajuste le margin */
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50%;
+    margin-right: 0px;
+    /* Retire le margin-right */
+}
+
+a {
+    color: white;
+}
+
+.laformation{
+    display: none;
+}
+
+nav{
+    width: 400px;
+    height: 100%;
+    left: 0%;
+    top : 20%
+}
+
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0;
+    width: 60%;
+    background-color: #2F2A85;
+    z-index: 2;
+    gap: 30px;
+}
+
+
+.nav-links li a{
+    margin-bottom: 50px;
+}
+
+.nav-links.show {
+    display: flex;
+    height: 350px;
+}
+
+.hamburger-menu {
+    display: block;
+}
+
+
+.logoclass{
+    align-items: center;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: block;
+}
+
+    body{
+        overflow: scroll;
+    }
+
+    .form-group {
+        flex-basis: 100%;
+        margin-right: 0;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section-general{
+        flex-direction: column;
+        height: 100%;
+        margin-top: 15%;
+    }
+
+    .welcome-section{
+        flex: auto
+    }
+
+    .welcome-content h2 {
+        font-family: Rowdies;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .welcome-content{
+        margin: 30px 0px 30px 0px;
+        text-align: center;
+    }
+    
+    .welcome-content p {
+        font-family: Kanit;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .form-section {
+        flex: auto;
+        background-color: #2F2A85;
+        display: flex;
+        padding: 0px;
+        flex-direction: column; /* Afficher les éléments en colonne */
+        align-items: center; /* Centrer verticalement */
+        justify-content: center; /* Centrer horizontalement */
+        height: 100%; /* Utiliser 100% de la hauteur disponible */
+    }
+
+    .form {
+        max-width: auto;
+        margin: 0;
+    }
+    .form-section h2 {
+        text-align: left;
+        font-family: Rowdies;
+        font-size: 28px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: none;
+        justify-content: space-between;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    #gauche{
+        margin: 0px 0px 40px;
+    } 
+
+   .form-section h2{
+        text-align: center;
+        margin: 50px 0px 50px 0px;
+    }
+
+
+    label{
+        text-align: center;
+    }
+
+    input{
+        text-align: center;
+    }
+
+    input,select{
+        text-align: center;
+    }
+
+    button{
+        margin-bottom: 30%;
+    }
+}

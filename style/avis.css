@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2% 17%;
+      font-family: 'Rowdies', sans-serif;
+      position: relative;
+      z-index: 2;
+  }
+  
+  a {
+      color: #000000;
+  }
+  
+  .laformation {
+      cursor: pointer;
+  }
+  
+  nav {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 27%;
+      top: 60%;
+  }
+  
+  header li {
+      color: #f1f1f1;
+  }
+  
+  .logoclass{
+      position: absolute;
+      margin-left: 2%;
+      margin-top: 2%;
+  }
+  
+  .logo {
+      cursor: pointer;
+      width: 19%;
+      margin-right: 100%;
+  }
+  
+  
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 50%;
+  }
+  
+  .nav-links li {
+      display: inline-block;
+      white-space: nowrap;
+  }
+  
+  .sousmenu {
+      display: none;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      background-color: #f1f1f1;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      z-index: 1;
+  }
+  
+  .nav-links li:hover .sousmenu {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+  }
+  
+  .sousmenu li {
+      display: block;
+  }
+  
+  .sousmenu li a {
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      padding: 7%;
+  }
+  
+  .sousmenu li a:hover {
+      color: #f1f1f1;
+  }
+  
+  .nav-links .sousmenu li {
+      display: inline-block;
+      padding: 0;
+  }
+  
+  .nav-links li a {
+      transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links li a:hover {
+      color: #2f2a85;
+  }
+  
+  .button-nav {
+      font-family: 'Rowdies', sans-serif;
+      padding: 5px 10px;
+      background-color: #f1f1f1;
+      color: #2f2a85;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      border: none;
+      white-space: nowrap;
+  }
+  
+  .button-nav:hover {
+      background-color: #2f2a85;
+      color: #f1f1f1;
+  }
+
+
+
+
+
+
+
+
+
+  .rectangle {
+    width: 100%;
+    height: 250px;
+    background-color: #102129;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .pattern {
+    width: 100%;
+    height: 100%;
+  }
+
+  .avis {
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    width: 80%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#formulaire-section,
+#questionnaire-section {
+    max-width: 90%; /* Ajoute une largeur de 90% pour les écrans plus petits */
+}
+
+
+/* Continuez à ajouter des media queries au besoin */
+
+#formulaire-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#formulaire-section h2 {
+    font-family: Rowdies;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#formulaire-acces {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 2%;
+}
+
+#btn-formulaire {
+    background-color: #2F2A85;
+    color: white;
+    margin-top: 9%;
+    
+    width: 209px;
+    border: none;
+    height: 50px;
+    font-size: 13px;
+    border-radius: 13px;
+    font-family: Kanit;
+    font-weight: normal;
+   
+}
+
+#btn-formulaire:hover {
+    background-color: #4c45d4;
+    transition: background-color 0.3s;
+}
+
+label {
+    text-align: left;
+    color: #2F2A85;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.conteneur-section {
+    max-width: 100%; /* Ajuste la largeur maximale */
+    width: 90%; /* Ajoute une largeur de 90% pour les écrans plus petits */
+    height: 80vh; /* Ajuste la hauteur */
+    border: 17px solid #A6A1FF;
+    border-radius: 54px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.question-section {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.question-info {
+    margin-bottom: 20px;
+}
+
+#texte-question-info {
+    font-family: Rowdies, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: 2%;
+}
+
+#conteneur-question {
+    text-align: left;
+}
+
+#texte-question {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+#conteneur-options {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+#conteneur-options button {
+    width: 100%; /* Ajuste la largeur des boutons à 100% */
+    margin-bottom: 40px; /* Ajoute une marge entre les boutons */
+
+    display: block;
+    max-width: 453px; /* Ajoute une largeur maximale */
+    height: 75px;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 13px;
+    transition: background-color 0.3s;
+}
+
+
+
+
+#conteneur-options button:hover {
+    background-color: #A6A1FF;
+}
+
+.active {
+    background-color: #A6A1FF;
+}
+#conteneur-boutons {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row; /* Ajuste la direction en ligne */
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    margin-right: 80px;
+    margin-bottom: 41px;
+}
+
+#btn-retour {
+    width: 161px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin-right: 20px; /* Ajout de la marge entre les boutons */
+    color: #FF0000;
+    border: 3px solid #FF0000;
+    background-color: white;
+    transition: 0.3s;
+    font-family: Kanit;
+    font-weight: normal;
+    
+}
+
+#btn-suivant {
+    width: 161px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 13px;
+    color: #FFFFFF;
+    background-color: #2F2A85;
+    border: 3px solid #2F2A85;
+    transition: 0.3s;
+    font-family: Kanit;
+    font-weight: normal;
+    
+}
+
+#btn-suivant:hover {
+    background-color: #4c45d4;
+    border: 3px solid #4c45d4;
+    transition: 0.3s;
+}
+
+#btn-retour:hover {
+    background-color: #FF0000;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+#message-felicitation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #A6A1FF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    z-index: 999;
+}
+
+#questionnaire-section.masquer {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex; 
+    align-items: flex-start;
+    margin-top: 10%;
+    height: 300px;
+    background-color: rgba(47, 42, 133, 1);
+}
+
+.logofooter {
+    cursor: pointer;
+    margin-left: 5%;
+    width: 19%;
+    margin-top: 4%;
+}
+
+.adressetext{
+    margin-left: 7%;
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    margin-top: 4%;
+}
+
+.adresse{
+    font-size: 17px;
+}
+
+.adresse2{
+    font-size: 15px;
+    margin-top: 7%;
+}
+
+.textfooter{
+    margin-left: 7%;
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 17px;
+    margin-top: 4%;
+}
+
+.cookies{
+    margin-top: 7%;
+}
+
+.mailtext{
+    margin-left: 7%;
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    margin-top: 4%;
+}
+
+.mailtext .contactfooter{
+    color: white;
+   transition: 0,2s;
+   }
+   
+   
+   
+   .mailtext .contactfooter:hover{
+       color: #A6A1FF;
+       border-bottom: 2px solid #A6A1FF;
+       transition: 0,2s;
+   }
+
+.mail{
+    margin-top: 7%;
+}
+
+.telephone{
+    margin-top: 7%;
+}
+
+.fleche1{
+    height: 50px;
+}
+
+.btn2, .btn3, .btn4{
+    margin-top: 12%;
+}
+
+.btn2{
+    margin-left: 5%;
+}
+
+.btn3{
+    margin-left: 1%;
+}
+
+.btn4{
+    margin-left: 1%;
+}
+
+.btn{
+    margin-top: 4%;
+}
+
+.hamburger-menu {
+    width: 50px;
+    height: 50%;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0px ; /* Ajuste la distance de la gauche en fonction de ton design */
+    z-index: 2;
+}
+
+.hamburger-menu .bar{
+    color: #000000;
+    width: 20%px;
+    height: 30px;
+    background-color: #000000;
+    margin: 27px 0;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+
+    
+  .rectangle {
+    width: 100%;
+    height: 100px;
+    background-color: #102129;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .pattern {
+    width: 100%;
+    height: 100%;
+  }
+
+  .avis {
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    width: 80%;
+    text-align: center;
+}
+
+
+    header {
+        height: 100px;
+        display: flex;
+        justify-content: center; /* Ajoute cette ligne pour centrer les éléments horizontalement */
+        align-items: center;
+        padding: 2% 17%;
+        font-family: 'Rowdies', sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .logoclass {
+        /* Retire la position absolue et ajuste le margin */
+        margin-top: 2%;
+        margin-left: 0px;
+    }
+
+    a.logoclass {
+        /* Retire la position absolue et ajuste le margin */
+        margin-top: 2%;
+        margin-left: 0px;
+    }
+
+    a {
+        color: white;
+    }
+    
+    .logo {
+        cursor: pointer;
+        width: 50%;
+        margin-right: 0px;
+        /* Retire le margin-right */
+    }
+
+    .laformation{
+        display: none;
+    }
+
+    nav{
+        width: 400px;
+        height: 100%;
+        left: 0%;
+        top : 20%
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px; /* Ajuste la distance du haut en fonction de ton design */
+        left: 0;
+        width: 60%;
+        background-color: #2F2A85;
+        z-index: 2;
+        gap: 30px;
+    }
+
+    .nav-links li a{
+        margin-bottom: 50px;
+    }
+
+    .nav-links.show {
+        display: flex;
+        height: 350px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .logoclass{
+        align-items: center;
+        text-align: center;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .nav-links .standard-nav_spe{
+        color: #f1f1f1;
+        display: block;
+    }
+
+
+
+    .conteneur-section,
+    #formulaire-section,
+    #questionnaire-section {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formulaire-section h2 {
+        font-size: 28px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #conteneur-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0; /* Supprimer la marge pour éviter tout décalage sur les côtés */
+        padding: 0; /* Supprimer le rembourrage pour éviter tout décalage sur les côtés */
+    }
+    
+    input {
+        width: auto;
+    }
+    #btn-formulaire {
+        margin-left: 0px;
+    }
+
+    #texte-question-info {
+        font-size: 28px;
+        margin-left: 0; /* Supprimer la marge à gauche pour éviter tout décalage */
+    }
+    .question-section {
+        margin-left: 0; /* Réinitialise la marge à gauche en mode responsive */
+    }
+
+    #texte-question {
+        text-align: center;
+        font-size: 16px;
+        margin-left: 20px; /* Supprimer la marge à gauche pour éviter tout décalage */
+        margin-right: 20px;/* Supprimer la marge à gauche pour éviter tout décalage */
+        margin-bottom: 30px;
+    }
+
+    #conteneur-options button {
+        font-size: 18px;
+        margin: 0 10px 30px 0; /* Ajouter une marge à droite et en bas de chaque option */
+        width: 280px;
+        height: 64px;
+    }
+
+    /* Centrer les éléments dans la section en mode responsive */
+    .conteneur-options{
+        margin: 0;
+    }
+
+    #conteneur-boutons {
+        text-align: center; /* Centre les boutons en mode responsive */
+        margin: 20px 0;
+      }
+    
+      #btn-retour{
+        width: 131px;
+        height: 50px;
+        padding: 0px 20px;
+        font-size: 13px;
+        cursor: pointer;
+        margin: 0 10px; 
+      }
+
+      #btn-suivant {
+        width: 131px;
+        height: 50px;
+        padding: 0px 20px;
+        font-size: 13px;
+        cursor: pointer;
+        margin: 0 10px; 
+    }
+    
+}

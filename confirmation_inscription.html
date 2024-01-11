@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/confirmation_inscription.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de votre inscription</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <a class="logoclass" href="index.html"><img class="logo" src="ressources/logo.png" alt="logo_univEffeil.png"></a>
+
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            <img class="bar" src="ressources/hamburger.png" alt="Menu">
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li class="standard-nav">
+                    <a class="laformation">LA FORMATION</a>
+                    <ul class="sousmenu">
+                        <li><a href="butmmi.html">BUT MMI</a></li>
+                        <li><a href="buttc.html">BUT TC</a></li>
+                        <li><a href="butgea.html">BUT GEA</a></li>
+                    </ul>
+                </li>
+                <li class="standard-nav"><a href="visite_virtuelle.html">VISITE VIRTUELLE</a></li>
+                <li class="standard-nav"><a href="avis.html">AVIS</a></li>
+                <li class="standard-nav_spe"><a href="butmmi.html">BUT MMI</a></li>
+                <li class="standard-nav_spe"><a href="buttc.html">BUT TC</a></li>
+                <li class="standard-nav_spe"><a href="butgea.html">BUT GEA</a></li>
+                <li class="standard-nav">
+                    <a class="button-nav" href="inscription.html">
+                        <button class="button-nav">NOUS RENCONTRER</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+
+    
+    <div class="container">
+        <div class="container-image">
+            <section class="texte">
+                <h1>Vous êtes désormais inscrit !<br>La visite virtuelle commence dans :</h1>
+                <div id="countdown"></div>
+                <button id="startButton" onclick="window.location.href='visite_virtuelle.html'">Retourner à la page d'accueil</button>
+            </section>
+        </div>
+    </div>
+    
+</body>
+
+
+
+    <script src="js/confirmation_inscription.js"></script>
+</body>
+</html>

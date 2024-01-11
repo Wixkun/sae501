@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/inscription.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription </title>
+    <script src="js/inscription.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+
+        <a class="logoclass" href="index.html"><img class="logo" src="ressources/logo.png" alt="logo_univEffeil.png"></a>
+
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            <img class="bar" src="ressources/hamburger.png" alt="Menu">
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li class="standard-nav">
+                    <a class="laformation">LA FORMATION</a>
+                    <ul class="sousmenu">
+                        <li><a href="butmmi.html">BUT MMI</a></li>
+                        <li><a href="buttc.html">BUT TC</a></li>
+                        <li><a href="butgea.html">BUT GEA</a></li>
+                    </ul>
+                </li>
+                <li class="standard-nav"><a href="visite_virtuelle.html">VISITE VIRTUELLE</a></li>
+                <li class="standard-nav"><a href="avis.html">AVIS</a></li>
+                <li class="standard-nav_spe"><a href="butmmi.html">BUT MMI</a></li>
+                <li class="standard-nav_spe"><a href="buttc.html">BUT TC</a></li>
+                <li class="standard-nav_spe"><a href="butgea.html">BUT GEA</a></li>
+                <li class="standard-nav">
+                    <a class="button-nav" href="inscription.html">
+                        <button class="button-nav">NOUS RENCONTRER</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="section-general">
+   
+    <div class="welcome-section">
+       
+        <div class="welcome-content">
+            <h2>Bienvenue sur notre site!</h2>
+            <p>Bienvenue à notre Journée Portes Ouvertes virtuelle ! Inscrivez-vous dès maintenant pour ne rien manquer de cette opportunité éducative exceptionnelle.</p>
+        </div>
+
+    </div>
+
+    <div class="form-section">
+        <form>
+            <h2>Inscription</h2>
+
+            <div class="form-row">
+                <div class="form-group" id="gauche">
+                    <label for="nom">Nom : *</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom : *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" id="gauche">
+                    <label for="niveau_etudes">Niveau d'études : </label>
+                    <select id="niveau_etudes" name="niveau_etudes">
+                        <option value="lyceen">Lycéen</option>
+                        <option value="etudiant">Étudiant</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" id="gauche">
+                    <label for="email">Adresse e-mail : *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="transport">Transport :</label>
+                    <select id="transport" name="transport">
+                        <option value="pied">À pied</option>
+                        <option value="voiture">Voiture</option>
+                        <option value="velo">Vélo</option>
+                        <option value="bus">Bus</option>
+                        <option value="metro">Métro</option>
+                        <option value="train">Train</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" id="gauche">
+                    <label for="distance">Distance : *</label>
+                    <select id="distance" name="distance" required>
+                        <option value="5km">≈ 5km</option>
+                        <option value="10km">≈ 10km</option>
+                        <option value="15km">≈ 15km</option>
+                        <option value="20km">≈ 20km</option>
+                        <option value="25km">≈ 25km</option>
+                        <option value="30km+">30km ou plus</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type_bac">Type de bac : *</label>
+                    <select id="type_bac" name="type_bac" required>
+                        <option value="general">Général</option>
+                        <option value="technologique">Technologique</option>
+                        <option value="professionnel">STMG</option>
+                        <option value="autre">Autre</option>
+                        <!-- Ajoutez d'autres options de bacs technologiques ici -->
+                    </select>
+                </div>
+            </div>
+        </form>
+        <button id="button" onclick="envoi()">S'inscrire</button>
+    </div>
+</section>
+
+
+</body>
+</html>

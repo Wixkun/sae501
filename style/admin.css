@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 17%;
+    font-family: 'Rowdies', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+a {
+    color: #000000;
+}
+
+.laformation {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 27%;
+    top: 60%;
+}
+
+header li {
+    color: #f1f1f1;
+}
+
+.logoclass{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 19%;
+    margin-right: 100%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50%;
+}
+
+.nav-links li {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.sousmenu {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: #f1f1f1;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: auto;
+    z-index: 1;
+}
+
+.nav-links li:hover .sousmenu {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.sousmenu li {
+    display: block;
+}
+
+.sousmenu li a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 7%;
+}
+
+.sousmenu li a:hover {
+    color: #f1f1f1;
+}
+
+.nav-links .sousmenu li {
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #2f2a85;
+}
+
+.button-nav {
+    font-family: 'Rowdies', sans-serif;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    color: #2f2a85;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+    white-space: nowrap;
+}
+
+.button-nav:hover {
+    background-color: #2f2a85;
+    color: #f1f1f1;
+}
+
+.button-nav {
+    font-weight: bold;
+    font-family: 'Rowdies', sans-serif;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    color: #2f2a85;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+    white-space: nowrap;
+}
+
+.button-nav:hover {
+    background-color: #2f2a85;
+    color: #f1f1f1;
+}
+
+
+
+
+.table-container {
+    font-family: Kanit;
+    margin-top: 8%;
+    max-width: 80%; /* Ajustez la largeur maximale selon vos préférences */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+  }
+
+  .table-container h1{
+  font-family: 'Rowdies', sans-serif;
+  color: #2f2a85;
+  margin-bottom: 1%;
+  }
+
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Alternance des couleurs de fond pour chaque cellule TH du tableau */
+  .table-container th:nth-child(even) {
+    background-color: #6A62FF;
+    color: white;
+  }
+  
+  .table-container th:nth-child(odd) {
+    background-color: #2F2A85;
+    color: white;
+  }
+  
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+
+
+  .table-container #infoTable tbody .btn-modifier {
+    color: #6A62FF; /* Couleur du texte */
+    border: none;
+}
+
+.table-container #infoTable tbody .btn-modifier:hover {
+    border-bottom: 2px solid #6A62FF;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.table-container #infoTable tbody .btn-supprimer {
+    color: #ff0000; /* Couleur du texte blanc */
+    border: none;
+
+}
+
+.table-container #infoTable tbody .btn-supprimer:hover {
+    border-bottom: 2px solid #ff0000;
+    font-weight: bold;
+    transition: 0.2s;
+
+}
+
+/* Espacement entre les boutons */
+.btn-operation {
+    margin-right: 10%;
+}
+
+
+
+
+
+  .questionnaire {
+    margin-top: 7%;
+  }
+
+  .questionnaire h1{
+    font-family: 'Rowdies', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #2F2A85;
+    margin-bottom: 3%;
+  }
+
+
+  .chart-container {
+    max-width: 80%; /* Ajustez la largeur maximale selon vos préférences */
+    margin: 20px auto; /* Centre le conteneur */
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+}
+
+.chart-info {
+    margin-right: 15%; /* Marge à droite pour séparer du diagramme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.chart-info label{
+    font-family: 'Rowdies', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    color: #2F2A85;
+}
+
+#myChart {
+    width: 500px; 
+    height: 500px; 
+}
+
+#selectQuestion{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #2F2A85;
+    color: #2F2A85;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+
+
+
+
+.Stat_visite {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    width: 800px;
+    height: 800px;
+    margin: 7% auto auto auto;
+    
+}
+
+.Stat_visite h1 {
+    color: #2f2a85;
+    font-size: 24px; /* Ajustez la taille de la police selon vos préférences */
+    margin-bottom: 3%;
+    font-family: 'Rowdies', sans-serif;
+}
+
+
+
+
+#barChart {
+    width:800px;
+    height: 800px; 
+}
+
+
+  footer{
+    font-family: 'Kanit', 'sans-serif';
+    display: flex; 
+    align-items: flex-start;
+    margin-top: 10%;
+    height: 300px;
+    background-color: rgba(47, 42, 133, 1);
+}
+
+.logofooter {
+    cursor: pointer;
+    margin-left: 5%;
+    width: 19%;
+    margin-top: 4%;
+}
+
+.adressetext{
+    margin-left: 7%;
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    margin-top: 4%;
+}
+
+.adresse{
+    font-size: 17px;
+}
+
+.adresse2{
+    font-size: 15px;
+    margin-top: 7%;
+}
+
+.textfooter{
+    margin-left: 7%;
+    color: white;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 17px;
+    margin-top: 4%;
+}
+
+.cookies{
+    margin-top: 7%;
+}
+
+.mailtext{
+    margin-left: 7%;
+    margin-top: 4%;
+   
+}
+
+.mailtext .contactfooter{
+ color: white;
+transition: 0,2s;
+}
+
+
+
+.mailtext .contactfooter:hover{
+    color: #A6A1FF;
+    border-bottom: 2px solid #A6A1FF;
+    transition: 0,2s;
+}
+
+.mail{
+    margin-top: 7%;
+}
+
+.telephone{
+    margin-top: 7%;
+}
+
+.contactfooter{
+    color: white;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 7%;
+}
+
+.fleche1{
+    height: 50px;
+}
+
+.btn2, .btn3, .btn4{
+    margin-top: 12%;
+}
+
+.btn2{
+    margin-left: 5%;
+}
+
+.btn3{
+    margin-left: 1%;
+}
+
+.btn4{
+    margin-left: 1%;
+}
+
+.btn{
+    margin-top: 4%;
+}
+
+
+
+
+
+
+  .hamburger-menu {
+    width: 50px;
+    height: 50%;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0px ; /* Ajuste la distance de la gauche en fonction de ton design */
+    z-index: 2;
+}
+
+.hamburger-menu .bar{
+    color: #000000;
+    width: 20%px;
+    height: 30px;
+    background-color: #000000;
+    margin: 27px 0;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+
+   
+
+    header {
+        height: 100px;
+        display: flex;
+        justify-content: center; /* Ajoute cette ligne pour centrer les éléments horizontalement */
+        align-items: center;
+        padding: 2% 17%;
+        font-family: 'Rowdies', sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+    
+
+
+.logoclass {
+    /* Retire la position absolue et ajuste le margin */
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+a.logoclass {
+    /* Retire la position absolue et ajuste le margin */
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50%;
+    margin-right: 0px;
+    /* Retire le margin-right */
+}
+
+a {
+    color: white;
+}
+
+.laformation{
+    display: none;
+}
+
+nav{
+    width: 400px;
+    height: 100%;
+    left: 0%;
+    top : 20%
+}
+
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0;
+    width: 60%;
+    background-color: #2F2A85;
+    z-index: 2;
+    gap: 30px;
+}
+
+
+.nav-links li a{
+    margin-bottom: 50px;
+}
+
+.nav-links.show {
+    display: flex;
+    height: 350px;
+}
+
+.hamburger-menu {
+    display: block;
+}
+
+
+.logoclass{
+    align-items: center;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: block;
+}
+
+
+
+
+.chart-container{
+    width: 90%;
+    flex-direction: column;
+}
+
+#myChart {
+    width: 350px;
+    height: 350px;
+}
+
+.chart-info label {
+    font-size: 12px;
+}
+
+.chart-info {
+ 
+    margin-bottom: 5%;
+}
+
+#selectQuestion {
+    width: 83px;
+    height: 18px;
+    font-size: 12px;
+}
+
+
+.Stat_visite h1 {
+ font-size: 20px;
+ margin: 15% auto auto auto;
+}
+
+.Stat_visite {
+    width: 350px;
+    height: 350px;
+   }
+   
+
+
+
+
+.table-container {
+    margin-top: 40%;
+    font-size: 12px;
+  }
+
+  .table-container h1{
+  font-size: 20px;
+  }
+
+  .table-container table {
+    width: 10%;
+    border-collapse: collapse;
+  }
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex; 
+    flex-direction: column;
+    margin-top: 15%;
+    height: 270px;
+    width: 100%;
+}
+
+.logofooter {
+    margin-left: 50%;
+    width: 40%;
+    margin-top: 10%;
+}
+
+.adressetext{
+    margin-left: 7%;
+    margin-top: -14%;
+}
+
+.adresse, .numero{
+    font-size: 13px;
+}
+
+.adresse2{
+    font-size: 10px;
+    margin-top: 7%;
+}
+
+.textfooter{
+    margin-left: 7%;
+    font-size: 13px;
+    margin-top: 4%;
+}
+
+.email{
+    font-size: 13px;
+    
+}
+
+.mail{
+    margin-top: 7%;
+    font-size: 10px;
+}
+
+.numero{
+    margin-top: -10%;
+}
+
+.telephone{
+    margin-top: 7%;
+    font-size: 10px;
+}
+
+.mailtext .contactfooter{
+    font-size: 13px;
+    color: #A6A1FF;
+}
+
+.btn2{
+    margin-left: 60%;
+    margin-top: -7%;
+}
+
+.btn3{
+    margin-left: 70%;
+    margin-top: -10%;
+}
+
+.btn4{
+    margin-left: 80%;
+    margin-top: -9%;
+}
+
+.btn{
+    display: none;
+}
+
+}
+

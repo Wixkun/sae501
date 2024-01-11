@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/page d'accueil.css">
+    <title>Page d'accueil</title>
+    <script src="js/page d'accueil.js"></script>
+</head>
+<body>
+<script>localStorage.clear();</script>
+    <header>
+
+        <a class="logoclass" href="index.html"><img class="logo" src="ressources/logo.png" alt="logo_univEffeil.png"></a>
+
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            <img class="bar" src="ressources/hamburger.png" alt="Menu">
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li class="standard-nav">
+                    <a class="laformation">LA FORMATION</a>
+                    <ul class="sousmenu">
+                        <li><a href="butmmi.html">BUT MMI</a></li>
+                        <li><a href="buttc.html">BUT TC</a></li>
+                        <li><a href="butgea.html">BUT GEA</a></li>
+                    </ul>
+                </li>
+                <li class="standard-nav"><a href="visite_virtuelle.html">VISITE VIRTUELLE</a></li>
+                <li class="standard-nav"><a href="avis.html">AVIS</a></li>
+                <li class="standard-nav_spe"><a href="butmmi.html">BUT MMI</a></li>
+                <li class="standard-nav_spe"><a href="buttc.html">BUT TC</a></li>
+                <li class="standard-nav_spe"><a href="butgea.html">BUT GEA</a></li>
+                <li class="standard-nav">
+                    <a class="button-nav" href="inscription.html">
+                        <button class="button-nav">NOUS RENCONTRER</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+<div class="div-timer">
+    <h1 class="avenir">
+        <span class="partie-noire">EXPLOREZ</span> <br><span class="partie-bleue">L'AVENIR</span>
+    </h1>
+   
+    <div class="timer">
+            <div id="jours" class="cercle">
+              <div class="petit-cercle">J</div>
+              <div id="jours-valeur">0</div>
+            </div>
+            <div class="points">:</div>
+            <div id="heures" class="cercle">
+              <div class="petit-cercle">H</div>
+              <div id="heures-valeur">0</div>
+            </div>
+            <div class="points">:</div>
+            <div id="minutes" class="cercle">
+              <div class="petit-cercle">M</div>
+              <div id="minutes-valeur">0</div>
+            </div>
+    </div>
+    <p class="portesouvertes">
+        <span class="partie-noire">avant la prochaine </span><span class="partie-bleue">Journée Portes Ouvertes</span>
+    </p>
+    <img class="personnage" src="ressources/personnage.png" alt="illustration">
+</div>
+
+
+<div class="phototext">
+    <div class="photo">
+        <img class="iut" src="ressources/iutoutside.png" alt="iutoutside">
+    </div>
+
+<div class="carre">
+<p class="jpotext">Les Journées Portes Ouvertes (JPO) s'ouvrent aux lycéens, aux étudiants et à leurs familles pour vous informer sur nos formations disponibles à l'IUT de Meaux et pour explorer les divers aspects du campus.<br><br>
+
+    Ces JPO se déroulent en présentiel, offrant l'occasion d'interagir directement avec les enseignants et les étudiants. Les participants auront la possibilité de visiter les stands dédiés aux différentes formations, aux associations étudiantes, aux services centraux (orientation, insertion professionnelle, réseau des diplômés, relations internationales, vie étudiante, médecine préventive, sports, etc.) et de participer à la visite du campus.<br><br>
+    
+    Chaque date de JPO présente des particularités. Le 03/02/2024, l'IUT de Meaux ouvrira ses portes pour accueillir les visiteurs et partager les spécificités de son offre éducative.</p>
+</div>
+</div>
+
+<h1 class="decouvrir">DÉCOUVREZ NOS <br>FORMATIONS</h1>
+
+
+<div class="div-rectangle">
+    <div class="petit-rectangle">GEA</div>
+    <a href="butgea.html" class="rectangle" id="gea">
+      <div class="fond" style="background-image: url('ressources/gea.png');">
+        <div class="overlay"></div>
+        <p class="textformations">Le BUT GEA forme des professionnels opérationnels dans les différents domaines liés à la gestion d'une entreprise (gestion, finance et comptabilité, notamment). Les élèves acquièrent des compétences en gestion, management, marketing, droit, fiscalité, comptabilité, communication, langues étrangères, mathématiques pour la gestion et statistiques.</p>
+      </div>
+    </a>
+    <div class="petit-rectangle2">MMI</div>
+    <a href="butmmi.html" class="rectangle" id="mmi">
+      <div class="fond" style="background-image: url('ressources/mmi.png');">
+        <div class="overlay"></div>
+        <p class="textformations">Le BUT MMI forme des professionnels polyvalents allant du domaine de l’informatique/web au graphisme et à l’audiovisuel. A l’issue de cette formation, les élèves se performeront dans le secteur du multimédia et de l’internet. En couvrant tous les champs du digital, ce diplôme vous donnera une expertise globale dans ce domaine.</p>
+      </div>
+    </a>
+    <div class="petit-rectangle3">TC</div>
+    <a href="buttc.html" class="rectangle" id="tc">
+      <div class="fond" style="background-image: url('ressources/tc.png');">
+        <div class="overlay"></div>
+        <p class="textformations">Le BUT TC forme des professionnels des techniques commerciales. Grâce à cette formation, les élèves auront des compétences en marketing, négociation, relation client, étude de marché et la vente. A l’issue de cette formation, les élèves auront connaissance de tous les aspects de la commercialisation.</p>
+      </div>
+    </a>
+  </div>
+  
+
+<div class="rectanglemap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.935658614602!2d2.8753550267822456!3d48.95471099392286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8a11cceb9ee4f%3A0x143615de96b042c5!2sIUT%20De%20Meaux%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1703685029763!5m2!1sfr!2sfr" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="informations">
+    <p class="textmap">Intéressé par ce que l’IUT de Meaux propose ? La Journée Portes Ouvertes est fait pour répondre à toutes vos questions. On vous attend avec impatience !</p>
+
+    <div class="siteweb">
+    <img class="courrier" src="ressources/courrier.png">
+    <p class="site">http://iut.univ-gustave-eiffel.fr/</p>
+    </div>
+
+    <div class="adresseiut">
+        <img class="epingle" src="ressources/epingle.png">
+        <p class="adresse_ecole">17 Rue Jablinot, 77100 Meaux</p>
+        </div>
+
+        <div class="numero_tel">
+            <img class="tel" src="ressources/tel.png">
+            <p class="num">+33 1 64 36 44 15</p>
+            </div>
+
+            <div class="distance_gare">
+                <img class="homme" src="ressources/bonhomme.png">
+                <p class="distance">10min de marche depuis la gare de Meaux</p>
+                </div>
+
+    </div>
+</div>
+
+    <footer>
+        <img class="logofooter" src="ressources/logoblanc.png" alt="logo_univEffeilblanc.png" href="#" >
+        <div class="adressetext">
+        <p class="adresse">Adresse de l'IUT :</p>
+        <p class="adresse2">17 Rue Jablinot,<br>77100 Meaux</p>
+        <br><br>
+        <p class="numero">Numéro de téléphone :</p>
+        <p class="telephone">01 64 36 44 15</p>
+        </div>
+        <div class="textfooter">
+        <p class="mentions">Mentions Légales</p>
+        <p class="cookies">Politiques des cookies</p>
+        </div>
+        <div class="mailtext">
+            <a class="contactfooter" href="contact.html">Contact</a>
+        </div>
+    
+        
+        <a href="https://www.facebook.com/UniversiteGustaveEiffel/" class="btn2">
+                <img class="fb" src="ressources/logofb.png" alt="fb">
+            </a>
+            <a href="https://www.instagram.com/universitegustaveeiffel/?hl=fr" class="btn3">
+                <img class="insta" src="ressources/logoinsta.png" alt="insta">
+            </a>
+            <a href="https://www.linkedin.com/school/universit%C3%A9-gustave-eiffel/" class="btn4">
+                <img class="lkd" src="ressources/logolkd.png" alt="lkd">
+            </a>
+            <a href="#" class="btn">
+                <img class="fleche1" src="ressources/flèche1.png" alt="fleche1">
+            </a>
+    </footer>
+
+</body>
+</html>

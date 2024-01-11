@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contact.css">
+    <script src="js/contact.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+  
+    <header>
+
+        <a class="logoclass" href="index.html"><img class="logo" src="ressources/logo.png" alt="logo_univEffeil.png"></a>
+
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            <img class="bar" src="ressources/hamburger.png" alt="Menu">
+        </button>
+
+        <nav>
+            <ul class="nav-links">
+                <li class="standard-nav">
+                    <a class="laformation">LA FORMATION</a>
+                    <ul class="sousmenu">
+                        <li><a href="butmmi.html">BUT MMI</a></li>
+                        <li><a href="buttc.html">BUT TC</a></li>
+                        <li><a href="butgea.html">BUT GEA</a></li>
+                    </ul>
+                </li>
+                <li class="standard-nav"><a href="visite_virtuelle.html">VISITE VIRTUELLE</a></li>
+                <li class="standard-nav"><a href="avis.html">AVIS</a></li>
+                <li class="standard-nav_spe"><a href="butmmi.html">BUT MMI</a></li>
+                <li class="standard-nav_spe"><a href="buttc.html">BUT TC</a></li>
+                <li class="standard-nav_spe"><a href="butgea.html">BUT GEA</a></li>
+                <li class="standard-nav">
+                    <a class="button-nav" href="inscription.html">
+                        <button class="button-nav">NOUS RENCONTRER</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rectangle">
+    <img class="pattern" src="ressources/pattern.png" alt="pattern">
+    <h1 class="contact">CONTACT</h1>
+    </div>
+
+    <div class="contacteznous">
+        <div class="contacteznous2">
+            <h2>Vous avez des questions ? <br>
+                Contactez-nous !</h2><br>
+            <p>Donnez votre avis nous permet de prendre en compte les axes d’amélioration afin de proposer un service meilleur pour les utilisateurs.<br><br>
+
+                Que ça soit à propos de notre site, de la visite virtuelle ou de la visite physique, chaque détail est important !</p>
+        </div>
+
+
+        <div class="formulaire">
+            <form>
+                <div class="form-group1">
+                    <label for="category">Vous êtes* :</label>
+                    <select id="statut" name="category">
+                        <option value="etudiant">Étudiant</option>
+                        <option value="lyceen">Lycéen</option>
+                        <option value="parents">Parents</option>
+                        
+                    </select>
+
+                </div>
+                <div class="nomprenom">
+                <div class="form-group2">
+                    <label for="nom">Nom*</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="form-group3">
+                    <label for="prenom">Prénom*</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                </div>
+
+                <div class="mailtel">
+                <div class="form-group4">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group5">
+                    <label for="numero">Téléphone</label>
+                    <input type="tel" id="numero" name="numero" required>
+                </div>
+                </div>
+
+                <div class="form-group6">
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-group7">
+                    <button class="partager" onclick="envoi()">Partager</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+<footer>
+    <img class="logofooter" src="ressources/logoblanc.png" alt="logo_univEffeilblanc.png" href="#" >
+    <div class="adressetext">
+    <p class="adresse">Adresse de l'IUT :</p>
+    <p class="adresse2">17 Rue Jablinot,<br>77100 Meaux</p>
+    <br><br>
+    <p class="numero">Numéro de téléphone :</p>
+    <p class="telephone">01 64 36 44 15</p>
+    </div>
+    <div class="textfooter">
+    <p class="mentions">Mentions Légales</p>
+    <p class="cookies">Politiques des cookies</p>
+    </div>
+    <div class="mailtext">
+        <a class="contactfooter" href="contact.html">Contact</a>
+    </div>
+
+    
+    <a href="https://www.facebook.com/UniversiteGustaveEiffel/" class="btn2">
+            <img class="fb" src="ressources/logofb.png" alt="fb">
+        </a>
+        <a href="https://www.instagram.com/universitegustaveeiffel/?hl=fr" class="btn3">
+            <img class="insta" src="ressources/logoinsta.png" alt="insta">
+        </a>
+        <a href="https://www.linkedin.com/school/universit%C3%A9-gustave-eiffel/" class="btn4">
+            <img class="lkd" src="ressources/logolkd.png" alt="lkd">
+        </a>
+        <a href="#" class="btn">
+            <img class="fleche1" src="ressources/flèche1.png" alt="fleche1">
+        </a>
+</footer>
+
+</body>
+</html>

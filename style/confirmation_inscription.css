@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  header {
+    background-color: white;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2% 17%;
+      font-family: 'Rowdies', sans-serif;
+      position: relative;
+      z-index: 2;
+  }
+  
+  a {
+      color: #000000;
+  }
+  
+  .laformation {
+      cursor: pointer;
+  }
+  
+  nav {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 27%;
+      top: 60%;
+  }
+  
+  header li {
+      color: #f1f1f1;
+  }
+  
+  .logoclass{
+      position: absolute;
+      margin-left: 2%;
+      margin-top: 2%;
+  }
+  
+  .logo {
+      cursor: pointer;
+      width: 19%;
+      margin-right: 100%;
+  }
+  
+  
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 50%;
+  }
+  
+  .nav-links li {
+      display: inline-block;
+      white-space: nowrap;
+  }
+  
+  .sousmenu {
+      display: none;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      background-color: #f1f1f1;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      z-index: 1;
+  }
+  
+  .nav-links li:hover .sousmenu {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+  }
+  
+  .sousmenu li {
+      display: block;
+  }
+  
+  .sousmenu li a {
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      padding: 7%;
+  }
+  
+  .sousmenu li a:hover {
+      color: #f1f1f1;
+  }
+  
+  .nav-links .sousmenu li {
+      display: inline-block;
+      padding: 0;
+  }
+  
+  .nav-links li a {
+      transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links li a:hover {
+      color: #2f2a85;
+  }
+  
+  .button-nav {
+      font-family: 'Rowdies', sans-serif;
+      padding: 5px 10px;
+      background-color: #f1f1f1;
+      color: #2f2a85;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      border: none;
+      white-space: nowrap;
+  }
+  
+  .button-nav:hover {
+      background-color: #2f2a85;
+      color: #f1f1f1;
+  }
+/* Button navigation */
+
+
+
+button:hover {
+    background-color: #2f2a85;
+    color: #f1f1f1;
+}
+
+
+body {
+    color: #ffffff;
+    height: 100vh;
+    font-family: rowdies;
+    font-weight: bold;
+
+}
+
+.container {
+    font-size: 45px;
+    background-image: url("../ressources/test.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Modification pour utiliser 100% de la hauteur */
+    background-color: #191740;
+    margin-top: 2%;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ajout pour centrer le texte horizontalement */
+}
+
+h1 {
+    text-align: center;
+}
+
+#countdown {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#startButton {
+    background-color: #ffffff;
+    color: #2F2A85;
+    border: none;
+    border-radius: 26px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-family: kanit;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-left: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #2F2A85;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hamburger-menu {
+    width: 50px;
+    height: 50%;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0px ; /* Ajuste la distance de la gauche en fonction de ton design */
+    z-index: 2;
+}
+
+.hamburger-menu .bar{
+    color: #000000;
+    width: 20%px;
+    height: 30px;
+    background-color: #000000;
+    margin: 27px 0;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        height: 100px;
+        display: flex;
+        justify-content: center; /* Ajoute cette ligne pour centrer les éléments horizontalement */
+        align-items: center;
+        padding: 2% 17%;
+        font-family: 'Rowdies', sans-serif;
+        position: relative;
+        z-index: 2;
+    }
+    
+
+
+.logoclass {
+    /* Retire la position absolue et ajuste le margin */
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+a.logoclass {
+    /* Retire la position absolue et ajuste le margin */
+    margin-top: 2%;
+    margin-left: 0px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50%;
+    margin-right: 0px;
+    /* Retire le margin-right */
+}
+
+a {
+    color: white;
+}
+
+.laformation{
+    display: none;
+}
+
+nav{
+    width: 400px;
+    height: 100%;
+    left: 0%;
+    top : 20%
+}
+
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Ajuste la distance du haut en fonction de ton design */
+    left: 0;
+    width: 60%;
+    background-color: #2F2A85;
+    z-index: 2;
+    gap: 30px;
+}
+
+
+.nav-links li a{
+    margin-bottom: 50px;
+}
+
+.nav-links.show {
+    display: flex;
+    height: 350px;
+}
+
+.hamburger-menu {
+    display: block;
+}
+
+
+.logoclass{
+    align-items: center;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.nav-links .standard-nav_spe{
+    color: #f1f1f1;
+    display: block;
+}
+
+    .texte{
+        margin: 50px;
+    }
+   
+    .container{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    #countdown {
+        font-size: 20px;
+    }
+
+    #startButton {
+        margin-top: 20%;
+    }
+}
